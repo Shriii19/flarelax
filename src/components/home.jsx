@@ -259,8 +259,6 @@ const Home = () => {
               transition={{ delay: 0.3 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 md:mb-8 text-gray-900 leading-tight"
             >
-              Cheap VPS Hosting India
-              <br />
               <span className="text-blue-600">Best VPS Hosting India</span>
             </motion.h1>
 
