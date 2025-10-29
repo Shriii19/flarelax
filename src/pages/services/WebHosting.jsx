@@ -1,0 +1,316 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+
+const WebHosting = () => {
+  const features = [
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      ),
+      title: 'Lightning Fast Speed',
+      description: 'SSD storage and optimized servers ensure your website loads in milliseconds',
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+        </svg>
+      ),
+      title: 'Free SSL Certificate',
+      description: 'Secure your website with automatic SSL/TLS encryption at no extra cost',
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        </svg>
+      ),
+      title: 'Daily Backups',
+      description: 'Automatic daily backups keep your data safe and recoverable',
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+        </svg>
+      ),
+      title: '99.9% Uptime',
+      description: 'Industry-leading uptime guarantee with redundant infrastructure',
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+        </svg>
+      ),
+      title: 'Easy Control Panel',
+      description: 'User-friendly cPanel for effortless website management',
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      ),
+      title: '24/7 Expert Support',
+      description: 'Round-the-clock support via chat, email, and phone',
+    },
+  ];
+
+  const plans = [
+    {
+      name: 'Starter',
+      price: '₹80.00',
+      period: '/mo',
+      description: 'Perfect for personal websites',
+      url: 'https://portal.flarelax.com/index.php/store/web-hosting/starter',
+      features: [
+        'One Domain',
+        'AMD EPYC Processor',
+        '25GB U.3 NVMe SSD DDR5 RAM',
+        'Ultra Fast DDR5 RAM',
+        'Free SSL Certificate',
+        'Dedicated resource',
+        'Unmetered Bandwidth',
+        'Unlimited Free MySQL & MS SQL',
+      ],
+    },
+    {
+      name: 'Personal',
+      price: '₹170.00',
+      period: '/mo',
+      description: 'Best for small businesses',
+      popular: true,
+      url: 'https://portal.flarelax.com/index.php/store/web-hosting/personal',
+      features: [
+        '4 Domains',
+        'AMD EPYC Processor',
+        '50GB U.3 NVMe SSD DDR5 RAM',
+        'Ultra Fast DDR5 RAM',
+        'Free SSL Certificate',
+        'Dedicated resource',
+        'Unmetered Bandwidth',
+        'Unlimited Free MySQL & MS SQL',
+      ],
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 relative overflow-hidden">
+      {/* Animated Background Blobs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse animation-delay-2000"></div>
+        <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse animation-delay-4000"></div>
+      </div>
+
+      <Navbar />
+
+      <div className="relative pt-32 pb-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Hero Section */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-20"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg mb-8">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-gray-700">Reliable & Affordable Web Hosting</span>
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-[#9a00ff] via-purple-600 to-blue-600 text-transparent bg-clip-text">
+                Web Hosting Solutions
+              </span>
+            </h1>
+            <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+              Fast, secure, and reliable web hosting powered by SSD storage. Get your website online in minutes with our easy-to-use control panel.
+            </p>
+
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link to="/signup">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-gradient-to-r from-[#9a00ff] to-[#7c00cc] text-white font-bold rounded-xl shadow-lg shadow-purple-500/30 hover:shadow-xl transition-all"
+                >
+                  Get Started Now →
+                </motion.button>
+              </Link>
+              <Link to="/pricing">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-white text-[#9a00ff] font-bold rounded-xl shadow-lg hover:shadow-xl transition-all border-2 border-purple-200"
+                >
+                  View Pricing
+                </motion.button>
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* Features Grid */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="mb-20"
+          >
+            <h2 className="text-3xl font-bold text-center mb-12">
+              <span className="bg-gradient-to-r from-[#9a00ff] to-purple-600 text-transparent bg-clip-text">
+                Why Choose Our Web Hosting?
+              </span>
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {features.map((feature, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 + idx * 0.1 }}
+                  className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-purple-100"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white mb-4">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-bold bg-gradient-to-r from-[#9a00ff] to-purple-600 text-transparent bg-clip-text mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Pricing Plans */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="mb-20"
+          >
+            <h2 className="text-3xl font-bold text-center mb-12">
+              <span className="bg-gradient-to-r from-[#9a00ff] to-purple-600 text-transparent bg-clip-text">
+                Choose Your Plan
+              </span>
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {plans.map((plan, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 + idx * 0.1 }}
+                  className={`relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-xl transition-all ${
+                    plan.popular
+                      ? 'border-2 border-[#9a00ff] scale-105'
+                      : 'border border-purple-100 hover:border-purple-200'
+                  }`}
+                >
+                  {plan.popular && (
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                      <span className="bg-gradient-to-r from-[#9a00ff] to-purple-600 text-white px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
+                        MOST POPULAR
+                      </span>
+                    </div>
+                  )}
+
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-bold bg-gradient-to-r from-[#9a00ff] to-purple-600 text-transparent bg-clip-text mb-2">
+                      {plan.name}
+                    </h3>
+                    <p className="text-gray-600 text-sm">{plan.description}</p>
+                  </div>
+
+                  <div className="text-center mb-8">
+                    <div className="flex items-end justify-center gap-1">
+                      <span className="text-4xl font-bold bg-gradient-to-r from-[#9a00ff] to-purple-600 text-transparent bg-clip-text">
+                        {plan.price}
+                      </span>
+                      <span className="text-gray-500 mb-1">{plan.period}</span>
+                    </div>
+                  </div>
+
+                  <ul className="space-y-3 mb-8">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-3">
+                        <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a href={plan.url} target="_blank" rel="noopener noreferrer">
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className={`w-full py-3 rounded-xl font-bold transition-all ${
+                        plan.popular
+                          ? 'bg-gradient-to-r from-[#9a00ff] to-[#7c00cc] text-white shadow-lg shadow-purple-500/30'
+                          : 'bg-purple-50 text-[#9a00ff] border-2 border-purple-200 hover:bg-purple-100'
+                      }`}
+                    >
+                      Get Started
+                    </motion.button>
+                  </a>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* CTA Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="text-center bg-white/80 backdrop-blur-xl rounded-3xl p-12 shadow-xl border border-purple-100"
+          >
+            <h2 className="text-3xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-[#9a00ff] to-purple-600 text-transparent bg-clip-text">
+                3-Day Money-Back Guarantee
+              </span>
+            </h2>
+            <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+              Not happy with your web hosting? No worries — if you face any technical issue or simply change your mind within 3 days, we'll refund your money — no questions asked. We believe in complete customer satisfaction.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link to="/signup">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-gradient-to-r from-[#9a00ff] to-[#7c00cc] text-white font-bold rounded-xl shadow-lg shadow-purple-500/30 hover:shadow-xl transition-all"
+                >
+                  Get Started →
+                </motion.button>
+              </Link>
+              <Link to="/login">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-white text-[#9a00ff] font-bold rounded-xl shadow-lg hover:shadow-xl transition-all border-2 border-purple-200"
+                >
+                  Sign In
+                </motion.button>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default WebHosting;
