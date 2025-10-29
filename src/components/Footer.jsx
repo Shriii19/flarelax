@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import logo from '../assets/fff.png';
 
 const footerLinks = [
   {
@@ -117,10 +118,8 @@ const Footer = () => {
               <div className="flex items-center space-x-3 mb-4">
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity"></div>
-                  <div className="relative flex items-center justify-center w-11 h-11 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg shadow-xl">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-                    </svg>
+                  <div className="relative flex items-center justify-center w-11 h-11 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg shadow-xl overflow-hidden">
+                    <img src={logo} alt="Flarelax Logo" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <h2 className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">

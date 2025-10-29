@@ -1,0 +1,23 @@
+{
+  "name": "Flarelax - Premium Web Hosting Platform",
+  "short_name": "Flarelax",
+  "description": "Premium hosting solutions for web, VPS, dedicated servers, and game hosting",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9a00ff",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

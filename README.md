@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="public/logo.png" alt="Flarelax Logo" width="120" height="120" />
+
 # ⚡ Flarelax
 
 ### Premium Web Hosting & Domain Management Platform
