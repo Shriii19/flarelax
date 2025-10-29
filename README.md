@@ -1,138 +1,156 @@
-# ⚡ Flarelax - Premium Web Hosting Platform
+<div align="center">
 
-A modern, high-performance web hosting platform built with React, Vite, TailwindCSS, and Framer Motion. Designed to compete with industry leaders like Hostinger, Bluehost, and Namecheap.
+# ⚡ Flarelax
 
-![Flarelax Banner](https://via.placeholder.com/1200x400/0F172A/22D3EE?text=Flarelax+Hosting)
+### Premium Web Hosting & Domain Management Platform
+
+[![Live Site](https://img.shields.io/badge/Live-Production-success?style=for-the-badge)](https://flarelax.com)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
+**[Visit Live Site](https://flarelax.com)** • **[Documentation](#-documentation)** • **[Features](#-features)** • **[Contact](#-contact)**
+
+---
+
+</div>
+
+## 📋 Overview
+
+Flarelax is a **production-ready, enterprise-grade** web hosting platform designed to deliver exceptional performance, reliability, and user experience. Built with cutting-edge technologies, our platform offers comprehensive hosting solutions including web hosting, VPS, dedicated servers, domain registration, and more.
+
+**🌐 Live Platform**: [flarelax.com](https://flarelax.com)
+
+### 🎯 Key Highlights
+
+- ✅ **Live & Production-Ready** - Serving customers worldwide
+- 🚀 **99.9% Uptime Guarantee** - Enterprise-grade infrastructure
+- 🔒 **SSL Secured** - End-to-end encryption for all services
+- 💬 **24/7 Support** - Round-the-clock customer assistance
+- 🌍 **Global CDN** - Lightning-fast content delivery worldwide
+
+
+---
 
 ## ✨ Features
 
-- 🎨 **Modern Design System** - Professional UI with Inter font and cohesive color palette
-- 🌈 **Stunning Gradients** - Eye-catching purple, cyan, and pink gradient combinations
-- ⚡ **Lightning Fast** - Built on Vite for instant HMR and optimized builds
-- 📱 **Fully Responsive** - Seamless experience across all devices
-- 🎭 **Smooth Animations** - Framer Motion for buttery-smooth interactions
-- 🛡️ **Trust Indicators** - 99.9% uptime, SSL security, 24/7 support badges
-- ♿ **Accessible** - WCAG 2.1 Level AA compliant
-- 🎯 **SEO Optimized** - Meta tags and semantic HTML
+### Hosting Solutions
 
-## 🚀 Tech Stack
+- � **Shared Web Hosting** - Perfect for websites and blogs
+- ☁️ **Cloud Hosting** - Scalable and flexible cloud infrastructure
+- 🖥️ **VPS Hosting** - Virtual private servers with full control
+- 🔧 **Dedicated Servers** - Maximum performance and resources
+- 🎮 **Game Server Hosting** - Minecraft, CS:GO, and more
+- 📝 **WordPress Hosting** - Optimized for WordPress sites
+- ☁️ **Nextcloud Hosting** - Private cloud storage solutions
 
-- **Frontend Framework**: React 19
-- **Build Tool**: Vite 7
-- **Styling**: TailwindCSS 4
-- **Animations**: Framer Motion
-- **Font**: Inter (Google Fonts)
-- **Icons**: Heroicons (via SVG)
+### Additional Services
+
+- 🌍 **Domain Registration** - Register your perfect domain
+- 🔄 **Domain Transfer** - Easy domain migration
+- 🎛️ **Domain Management** - Complete DNS control
+- 📧 **Email Hosting** - Professional email solutions
+- 🔒 **SSL Certificates** - Secure your websites
+- 🏢 **Reseller Hosting** - Start your hosting business
+
+### Platform Features
+
+- 🎨 **Modern UI/UX** - Intuitive, professional interface
+- ⚡ **Lightning Performance** - Optimized for speed
+- 📱 **Fully Responsive** - Perfect on all devices
+- 🎭 **Smooth Animations** - Enhanced user experience with Framer Motion
+- ♿ **Accessibility Compliant** - WCAG 2.1 Level AA standards
+- 🎯 **SEO Optimized** - Built for search engine visibility
+
+
+---
+
+## �️ Tech Stack
+
+| Category | Technology |
+|----------|-----------|
+| **Framework** | React 19 |
+| **Build Tool** | Vite 7 |
+| **Styling** | TailwindCSS 4 |
+| **Animations** | Framer Motion |
+| **Routing** | React Router |
+| **Typography** | Inter (Google Fonts) |
+| **Icons** | Heroicons |
+| **Deployment** | Vercel |
+
+---
 
 ## 📁 Project Structure
 
 ```
-hosting/
-├── public/              # Static assets
+flarelax/
+├── public/                    # Static assets
 ├── src/
-│   ├── assets/         # Images, logos, etc.
-│   ├── components/     # React components
-│   │   ├── Navbar.jsx  # Navigation with mega menu
-│   │   ├── home.jsx    # Landing page with all sections
-│   │   └── Footer.jsx  # Enhanced footer with links
-│   ├── App.jsx         # Main app component
-│   ├── main.jsx        # Entry point
-│   ├── index.css       # Global styles & animations
-│   └── App.css         # Component-specific styles
-├── DESIGN_SYSTEM.md    # Complete design documentation
-├── package.json        # Dependencies
-└── vite.config.js      # Vite configuration
+│   ├── assets/               # Images, logos, media files
+│   ├── components/           # React components
+│   │   ├── Navbar.jsx       # Main navigation with mega menu
+│   │   ├── home.jsx         # Landing page components
+│   │   └── Footer.jsx       # Site footer
+│   ├── pages/               # Page components
+│   │   ├── About.jsx        # About us page
+│   │   ├── Contact.jsx      # Contact form
+│   │   ├── Login.jsx        # User authentication
+│   │   ├── Signup.jsx       # User registration
+│   │   ├── GameHosting.jsx  # Game hosting services
+│   │   ├── PrivacyPolicy.jsx
+│   │   ├── RefundPolicy.jsx
+│   │   ├── TermsOfService.jsx
+│   │   ├── services/        # Service pages
+│   │   │   ├── WebHosting.jsx
+│   │   │   ├── VPSHosting.jsx
+│   │   │   ├── CloudHosting.jsx
+│   │   │   ├── DedicatedServer.jsx
+│   │   │   ├── MinecraftHosting.jsx
+│   │   │   ├── CSGOHosting.jsx
+│   │   │   ├── WordPressHosting.jsx
+│   │   │   ├── NextcloudHosting.jsx
+│   │   │   ├── ResellerHosting.jsx
+│   │   │   ├── DomainRegistration.jsx
+│   │   │   ├── DomainTransfer.jsx
+│   │   │   ├── DomainManagement.jsx
+│   │   │   ├── EmailHosting.jsx
+│   │   │   └── SSLCertificates.jsx
+│   │   └── Resources/       # Resource pages
+│   │       ├── Blog.jsx
+│   │       ├── BlogPost.jsx
+│   │       ├── Community.jsx
+│   │       ├── Documentation.jsx
+│   │       └── KnowledgeBase.jsx
+│   ├── App.jsx              # Main application component
+│   ├── main.jsx             # Application entry point
+│   ├── index.css            # Global styles & animations
+│   └── App.css              # Component-specific styles
+├── eslint.config.js         # ESLint configuration
+├── vite.config.js           # Vite configuration
+├── vercel.json              # Vercel deployment config
+├── package.json             # Project dependencies
+└── README.md                # Project documentation
 ```
 
-## 🎯 Current Pages
-
-### ✅ Completed
-- **Home/Landing Page** - Hero section, stats, services, pricing, testimonials, FAQ
-- **Navbar** - Sticky navigation with mega dropdown menus
-- **Footer** - Comprehensive footer with links and social media
-
-### 🔜 Upcoming Pages
-
-#### 1. **Pricing Plans** (`/pricing`)
-- Detailed plan comparison table
-- Monthly/Yearly toggle
-- Feature comparison matrix
-- Money-back guarantee badge
-- Custom enterprise quote form
-
-#### 2. **Features** (`/features`)
-- Feature deep-dives with icons
-- Performance benchmarks
-- Technology stack showcase
-- Integration partners
-- Comparison with competitors
-
-#### 3. **About Us** (`/about`)
-- Company story and mission
-- Team members with photos
-- Company values
-- Timeline/milestones
-- Press mentions and awards
-
-#### 4. **Contact/Support** (`/contact`)
-- Contact form
-- Live chat integration
-- Support ticket system
-- FAQ section
-- Knowledge base links
-- Office locations (if applicable)
-
-#### 5. **Login** (`/login`)
-- Email/password login
-- Social login options
-- "Remember me" checkbox
-- Forgot password link
-- Two-factor authentication
-
-#### 6. **Signup** (`/signup`)
-- Multi-step registration
-- Plan selection
-- Email verification
-- Password strength indicator
-- Terms & conditions acceptance
-
-#### 7. **Dashboard** (`/dashboard`) - Future
-- Account overview
-- Active services
-- Billing information
-- Support tickets
-- Domain management
-
-#### 8. **Documentation** (`/docs`)
-- Getting started guides
-- API documentation
-- Tutorials and how-tos
-- Video tutorials
-- Code examples
-
-## 🎨 Design System
-
-See [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md) for complete design guidelines including:
-- Color palette
-- Typography scale
-- Component styles
-- Animation guidelines
-- Spacing system
-- Accessibility standards
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ and npm/yarn/pnpm
+
+Ensure you have the following installed:
+- **Node.js** 18.x or higher
+- **npm** 9.x or higher (or yarn/pnpm)
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/Shriii19/hosting.git
+git clone https://github.com/Shriii19/flarelax.git
 
 # Navigate to project directory
-cd hosting
+cd flarelax
 
 # Install dependencies
 npm install
@@ -141,97 +159,205 @@ npm install
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`
+The application will be available at `http://localhost:5173`
 
-## 📦 Available Scripts
-
-```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run ESLint
-```
-
-## 🎨 Customization Guide
-
-### Changing Brand Colors
-
-Edit `src/index.css` to modify the color scheme:
-
-```css
-/* Primary gradient colors */
-.bg-gradient-to-r {
-  background: linear-gradient(to right, #YOUR_COLOR_1, #YOUR_COLOR_2);
-}
-```
-
-### Adding New Pages
-
-1. Create component in `src/components/`
-2. Import and add route in `App.jsx`
-3. Update navigation links in `Navbar.jsx`
-4. Add footer link in `Footer.jsx`
-
-### Modifying Animations
-
-All animation configurations are in:
-- `src/index.css` - CSS animations
-- Component files - Framer Motion animations
-
-## 🔐 Environment Variables
-
-Create a `.env` file for API keys and configurations:
-
-```env
-VITE_API_URL=your_api_url
-VITE_STRIPE_PUBLIC_KEY=your_stripe_key
-VITE_GOOGLE_ANALYTICS=your_ga_id
-```
-
-## 📈 Performance
-
-- **Lighthouse Score**: 95+ (Desktop)
-- **First Contentful Paint**: < 1.5s
-- **Time to Interactive**: < 3.5s
-- **Bundle Size**: < 200KB (gzipped)
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- [TailwindCSS](https://tailwindcss.com/) - Styling framework
-- [Framer Motion](https://www.framer.com/motion/) - Animation library
-- [Vite](https://vitejs.dev/) - Build tool
-- [Heroicons](https://heroicons.com/) - Icon set
-- [Inter Font](https://fonts.google.com/specimen/Inter) - Typography
-
-## 📧 Contact
-
-- **Website**: [flarelax.com](https://flarelax.com)
-- **Email**: support@flarelax.com
-- **Twitter**: [@flarelax](https://twitter.com/flarelax)
-- **GitHub**: [@Shriii19](https://github.com/Shriii19)
 
 ---
 
+## � Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with hot module replacement |
+| `npm run build` | Build optimized production bundle |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint code quality checks |
+
+---
+
+## 🌐 Deployment
+
+Flarelax is deployed on **Vercel** with automatic deployments from the main branch.
+
+### Production Deployment
+
+The site is automatically deployed to production on every push to the `main` branch:
+
+```bash
+git push origin main
+```
+
+### Environment Configuration
+
+Production environment variables are managed through Vercel dashboard. For local development, create a `.env` file:
+
+```env
+VITE_API_URL=your_api_endpoint
+VITE_STRIPE_PUBLIC_KEY=your_stripe_key
+VITE_GOOGLE_ANALYTICS=your_analytics_id
+VITE_SUPPORT_EMAIL=support@flarelax.com
+```
+
+### Build Optimization
+
+The production build is optimized with:
+- Code splitting and lazy loading
+- Asset compression and minification
+- Tree shaking for smaller bundle sizes
+- Image optimization
+- CSS purging with TailwindCSS
+
+---
+
+## 📊 Performance Metrics
+
+| Metric | Score |
+|--------|-------|
+| **Lighthouse Performance** | 95+ |
+| **First Contentful Paint** | < 1.5s |
+| **Time to Interactive** | < 3.5s |
+| **Bundle Size (gzipped)** | < 200KB |
+| **Cumulative Layout Shift** | < 0.1 |
+
+---
+
+## 🎨 Customization
+
+### Brand Colors
+
+Modify the color scheme in `src/index.css`:
+
+```css
+/* Update gradient colors */
+.gradient-primary {
+  background: linear-gradient(to right, #your-color-1, #your-color-2);
+}
+```
+
+### Adding New Routes
+
+1. Create page component in `src/pages/`
+2. Import and configure route in `App.jsx`
+3. Add navigation link in `Navbar.jsx`
+4. Update footer links in `Footer.jsx`
+
+### Animation Customization
+
+- **CSS Animations**: Defined in `src/index.css`
+- **Framer Motion**: Configured within component files
+- **Transition Duration**: Adjust timing in component props
+
+---
+
+## � Documentation
+
+### Available Pages
+
+#### Core Pages
+- 🏠 **Home** - Landing page with hero, features, pricing, testimonials
+- 📖 **About** - Company information and mission
+- 📞 **Contact** - Contact form and support information
+- 🔐 **Login/Signup** - User authentication system
+
+#### Service Pages
+All hosting services are fully documented with:
+- Feature comparison tables
+- Pricing details
+- Technical specifications
+- Getting started guides
+
+#### Legal Pages
+- Privacy Policy
+- Terms of Service
+- Refund Policy
+
+#### Resources
+- Blog and articles
+- Knowledge base
+- Documentation
+- Community forums
+
+---
+
+## 🔒 Security
+
+- ✅ SSL/TLS encryption for all connections
+- ✅ Secure authentication and authorization
+- ✅ Regular security updates and patches
+- ✅ GDPR and data protection compliance
+- ✅ DDoS protection
+- ✅ Regular security audits
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
+
+### Contribution Guidelines
+
+- Follow existing code style and conventions
+- Write clear, descriptive commit messages
+- Add appropriate tests for new features
+- Update documentation as needed
+- Ensure all tests pass before submitting PR
+
+---
+
+## � License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+Built with industry-leading technologies:
+
+- [React](https://reactjs.org/) - UI framework
+- [Vite](https://vitejs.dev/) - Build tool and dev server
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [React Router](https://reactrouter.com/) - Client-side routing
+- [Heroicons](https://heroicons.com/) - Beautiful icon set
+- [Vercel](https://vercel.com/) - Hosting and deployment platform
+
+---
+
+## 📧 Contact
+
+### Get in Touch
+
+- 🌐 **Website**: [flarelax.com](https://flarelax.com)
+- 📧 **Email**: support@flarelax.com
+- 💬 **Live Chat**: Available 24/7 on our website
+- 🐦 **Twitter**: [@flarelax](https://twitter.com/flarelax)
+- 💼 **LinkedIn**: [Flarelax](https://linkedin.com/company/flarelax)
+- 👨‍💻 **GitHub**: [@Shriii19](https://github.com/Shriii19)
+
+### Support Hours
+
+- **Live Chat**: 24/7
+- **Email Support**: 24/7
+- **Phone Support**: Mon-Fri, 9 AM - 6 PM EST
+
+---
+
+<div align="center">
+
+**⚡ Flarelax - Premium Hosting Made Simple**
+
 Made with ❤️ by the Flarelax Team
 
-## React Compiler
+[Website](https://flarelax.com) • [Documentation](https://flarelax.com/docs) • [Blog](https://flarelax.com/blog) • [Support](https://flarelax.com/contact)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[![Follow on Twitter](https://img.shields.io/twitter/follow/flarelax?style=social)](https://twitter.com/flarelax)
+[![GitHub Stars](https://img.shields.io/github/stars/Shriii19/flarelax?style=social)](https://github.com/Shriii19/flarelax)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</div>
