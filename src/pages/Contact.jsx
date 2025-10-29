@@ -141,9 +141,9 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="mb-20"
+            className="mb-20 flex justify-center"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="w-full max-w-md">
               {contactMethods.map((method, idx) => (
                 <motion.a
                   key={idx}
@@ -151,7 +151,7 @@ const Contact = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 + idx * 0.1 }}
-                  className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-purple-100 text-center group cursor-pointer"
+                  className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all border border-purple-100 text-center group cursor-pointer block"
                 >
                   <div className="w-16 h-16 mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
                     {method.icon}
@@ -173,7 +173,7 @@ const Contact = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="lg:col-span-2"
             >
-               <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl border border-purple-100">
+               <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-purple-100">
                 <h2 className="text-3xl font-bold mb-6">
                   <span className="bg-gradient-to-r from-[#9a00ff] to-purple-600 text-transparent bg-clip-text">
                     Send Us a Message
@@ -183,8 +183,8 @@ const Contact = () => {
                   Fill out the form below and we'll get back to you as soon as possible.
                 </p>
 
-                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                 <form onSubmit={handleSubmit} className="space-y-6">
+                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-semibold text-gray-700 mb-2">
                         Your Name *
@@ -215,7 +215,7 @@ const Contact = () => {
                     </div>
                   </div>
 
-                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-semibold text-gray-700 mb-2">
                         Phone Number
@@ -293,10 +293,10 @@ const Contact = () => {
                initial={{ opacity: 0, x: 20 }}
                animate={{ opacity: 1, x: 0 }}
                transition={{ delay: 0.4, duration: 0.6 }}
-               className="space-y-4 sm:space-y-6"
+               className="space-y-6"
              >
                {/* Departments */}
-               <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-4 sm:p-6 shadow-lg border border-purple-100">
+               <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg border border-purple-100">
                  <h3 className="text-xl font-bold text-gray-900 mb-4">Departments</h3>
                 <div className="space-y-3">
                   {departments.map((dept, idx) => (
@@ -312,7 +312,7 @@ const Contact = () => {
               </div>
 
                {/* Business Hours */}
-               <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-4 sm:p-6 shadow-lg border border-purple-100">
+               <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg border border-purple-100">
                  <h3 className="text-xl font-bold text-gray-900 mb-4">Business Hours</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
@@ -337,7 +337,7 @@ const Contact = () => {
               </div>
 
                {/* Social Media */}
-               <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-4 sm:p-6 shadow-lg border border-purple-100">
+               <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg border border-purple-100">
                  <h3 className="text-xl font-bold text-gray-900 mb-4">Follow Us</h3>
                 <div className="flex gap-3">
                   <a href="#" className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center text-white hover:scale-110 transition-transform">
@@ -377,7 +377,7 @@ const Contact = () => {
                 Frequently Asked Questions
               </span>
             </h2>
-             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {faqs.map((faq, idx) => (
                 <div key={idx} className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-lg border border-purple-100">
                   <h3 className="text-lg font-bold text-gray-900 mb-3">{faq.question}</h3>

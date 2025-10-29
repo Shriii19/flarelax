@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../assets/fff.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -60,35 +61,33 @@ const Navbar = () => {
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 md:h-24">
+        <div className="flex items-center justify-between h-20">
           {/* LEFT: Logo and brand */}
-          <Link to="/" className="flex items-center space-x-3 md:space-x-4 group/logo flex-shrink-0 cursor-pointer">
+          <Link to="/" className="flex items-center space-x-3 group/logo flex-shrink-0 cursor-pointer z-50">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-800 rounded-xl md:rounded-2xl blur-md opacity-30 group-hover/logo:opacity-50 transition-opacity duration-300"></div>
-              <div className="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl md:rounded-2xl shadow-lg">
-                <svg className="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-                </svg>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-800 rounded-xl blur-md opacity-30 group-hover/logo:opacity-50 transition-opacity duration-300"></div>
+              <div className="relative flex items-center justify-center w-11 h-11 bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl shadow-lg overflow-hidden">
+                <img src={logo} alt="Flarelax Logo" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="text-lg md:text-2xl font-bold text-gray-900 tracking-tight whitespace-nowrap">
+              <span className="text-xl font-bold text-gray-900 tracking-tight whitespace-nowrap">
                 Flarelax
               </span>
-              <span className="text-[8px] md:text-[10px] text-purple-600 font-semibold tracking-widest uppercase -mt-1 whitespace-nowrap">Professional Hosting</span>
+              <span className="text-[9px] text-purple-600 font-semibold tracking-widest uppercase -mt-0.5 whitespace-nowrap">Professional Hosting</span>
             </div>
           </Link>
 
           {/* CENTER: Navigation links */}
-          <div className="hidden lg:flex items-center justify-center flex-1 gap-1">
+          <div className="hidden lg:flex items-center gap-2 flex-1 justify-center">
             
             {/* Services Dropdown */}
             <div className="relative group" onMouseEnter={() => setActiveDropdown('services')} onMouseLeave={() => setActiveDropdown(null)}>
-              <button className="group/nav relative px-3 py-2 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium">
+              <button className="group/nav relative px-4 py-2.5 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium">
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#9a00ff] scale-x-0 group-hover/nav:scale-x-100 transition-transform duration-300"></div>
-                <div className="relative flex items-center gap-1">
+                <div className="relative flex items-center gap-1.5">
                   <span className="text-sm">Services</span>
-                  <svg className={`w-3 h-3 text-gray-500 transition-transform duration-300 ${
+                  <svg className={`w-4 h-4 transition-transform duration-300 ${
                     activeDropdown === 'services' ? 'rotate-180' : ''
                   }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -234,11 +233,11 @@ const Navbar = () => {
 
             {/* Resources Dropdown */}
             <div className="relative group" onMouseEnter={() => setActiveDropdown('resources')} onMouseLeave={() => setActiveDropdown(null)}>
-              <button className="group/nav relative px-3 py-2 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium">
+              <button className="group/nav relative px-4 py-2.5 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium">
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#9a00ff] scale-x-0 group-hover/nav:scale-x-100 transition-transform duration-300"></div>
-                <div className="relative flex items-center gap-1">
+                <div className="relative flex items-center gap-1.5">
                   <span className="text-sm">Resources</span>
-                  <svg className={`w-3 h-3 text-gray-500 transition-transform duration-300 ${
+                  <svg className={`w-4 h-4 transition-transform duration-300 ${
                     activeDropdown === 'resources' ? 'rotate-180' : ''
                   }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -292,20 +291,16 @@ const Navbar = () => {
             {/* Network Status */}
             <a
               href="#"
-              className="group/nav relative px-3 py-2 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium"
+              className="group/nav relative px-4 py-2.5 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium"
             >
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#9a00ff] scale-x-0 group-hover/nav:scale-x-100 transition-transform duration-300"></div>
               <span className="text-sm">Network Status</span>
             </a>
 
-          </div>
-
-          {/* RIGHT: Contact Us, Sign In, and Get Started */}
-          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
             {/* Contact Us */}
             <Link
               to="/contact"
-              className="group/nav relative px-3 py-2 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium"
+              className="group/nav relative px-4 py-2.5 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium"
             >
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#9a00ff] scale-x-0 group-hover/nav:scale-x-100 transition-transform duration-300"></div>
               <span className="text-sm">Contact Us</span>
@@ -316,18 +311,22 @@ const Navbar = () => {
               href="https://portal.flarelax.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group/nav relative px-3 py-2 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium"
+              className="group/nav relative px-4 py-2.5 overflow-hidden rounded-lg transition-all duration-300 text-gray-700 hover:text-[#9a00ff] font-medium"
             >
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#9a00ff] scale-x-0 group-hover/nav:scale-x-100 transition-transform duration-300"></div>
               <span className="text-sm">Client Portal</span>
             </a>
 
+          </div>
+
+          {/* RIGHT: Sign In and Get Started */}
+          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
             {/* Sign In button */}
             <a 
               href="https://portal.flarelax.com/index.php/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-gray-700 hover:text-[#9a00ff] transition-colors font-medium text-sm"
+              className="px-5 py-2.5 text-gray-700 hover:text-[#9a00ff] font-medium text-sm rounded-lg border border-gray-300 hover:border-[#9a00ff] transition-all duration-300"
             >
               Sign In
             </a>
@@ -337,8 +336,7 @@ const Navbar = () => {
               href="https://portal.flarelax.com/register.php"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 bg-[#9a00ff] hover:bg-[#8000dd] text-white font-medium text-sm shadow-sm hover:shadow-md transition-all duration-300" 
-              style={{borderRadius: '8px'}}
+              className="px-6 py-2.5 bg-[#9a00ff] hover:bg-[#8000dd] text-white font-medium text-sm rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Get Started
             </a>
