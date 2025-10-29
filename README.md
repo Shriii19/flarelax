@@ -39,7 +39,7 @@ Flarelax is a **production-ready, enterprise-grade** web hosting platform design
 
 ### Hosting Solutions
 
-- � **Shared Web Hosting** - Perfect for websites and blogs
+- 🌐 **Shared Web Hosting** - Perfect for websites and blogs
 - ☁️ **Cloud Hosting** - Scalable and flexible cloud infrastructure
 - 🖥️ **VPS Hosting** - Virtual private servers with full control
 - 🔧 **Dedicated Servers** - Maximum performance and resources
@@ -68,7 +68,7 @@ Flarelax is a **production-ready, enterprise-grade** web hosting platform design
 
 ---
 
-## �️ Tech Stack
+## 🛠️ Tech Stack
 
 | Category | Technology |
 |----------|-----------|
@@ -166,7 +166,7 @@ The application will be available at `http://localhost:5173`
 
 ---
 
-## � Available Scripts
+## 📜 Available Scripts
 
 | Command | Description |
 |---------|-------------|
@@ -251,7 +251,7 @@ Modify the color scheme in `src/index.css`:
 
 ---
 
-## � Documentation
+## 📖 Documentation
 
 ### Available Pages
 
@@ -312,7 +312,7 @@ We welcome contributions from the community! To contribute:
 
 ---
 
-## � License
+## 📄 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
