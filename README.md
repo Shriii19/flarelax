@@ -446,7 +446,7 @@ Modify the color scheme in `src/index.css`:
 
 # 4. Make changes & commit
 
-```cssgit add .
+cssgit add .
 
 /* Update gradient colors */git commit -m "Add: your feature"
 
